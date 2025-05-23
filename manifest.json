@@ -7,7 +7,7 @@
   "host_permissions": ["https://medium.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://medium.com/*"],
+      "matches": ["https://medium.com/*","*://*.substack.com/*","*://*.quora.com/*" ],
       "js": ["content.js"]
     }
   ]
