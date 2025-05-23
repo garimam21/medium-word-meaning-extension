@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Medium Word Meaning",
+  "description": "Highlight any word on Medium to get its meaning",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://medium.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://medium.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
